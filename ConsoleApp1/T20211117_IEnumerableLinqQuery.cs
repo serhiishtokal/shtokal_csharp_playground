@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
@@ -24,21 +25,25 @@ namespace ConsoleApp1
 
         public bool Where1(int x)
         {
-            Console.WriteLine($"Where1 {x}");
-            System.Threading.Thread.Sleep(5*1000);
-            Console.WriteLine($"Where1 {x} after sleep");
+            var threadId = Thread.CurrentThread.ManagedThreadId;
+            Console.WriteLine($"Where1 {x} {threadId}");
+            //System.Threading.Thread.Sleep(5*1000);
+            
+            //Console.WriteLine($"Where1 {x} after sleep");
             return x > 2;
         }
 
         public bool Where2(int x)
         {
-            Console.WriteLine($"Where2 {x}");
+            var threadId = Thread.CurrentThread.ManagedThreadId;
+            Console.WriteLine($"Where2 {x} {threadId}");
             return x < 6;
         }
 
         public int Select(int x)
         {
-            Console.WriteLine($"Select {x}");
+            var threadId = Thread.CurrentThread.ManagedThreadId;
+            Console.WriteLine($"Select {x} {threadId}");
             return x * 100;
         }
     }
