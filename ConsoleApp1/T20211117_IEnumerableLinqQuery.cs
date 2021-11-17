@@ -24,19 +24,21 @@ namespace ConsoleApp1
 
         public bool Where1(int x)
         {
-            Console.WriteLine("Where1");
+            Console.WriteLine($"Where1 {x}");
+            System.Threading.Thread.Sleep(5*1000);
+            Console.WriteLine($"Where1 {x} after sleep");
             return x > 2;
         }
 
         public bool Where2(int x)
         {
-            Console.WriteLine("Where2");
+            Console.WriteLine($"Where2 {x}");
             return x < 6;
         }
 
         public int Select(int x)
         {
-            Console.WriteLine("Select");
+            Console.WriteLine($"Select {x}");
             return x * 100;
         }
     }
