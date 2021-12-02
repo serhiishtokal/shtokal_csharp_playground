@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ConsoleApp1.Interfaces;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var k = new T20211117_IEnumerableLinqQuery();
+            ITest k = new T20211202_JsonDeSerialization();
             k.Test();
 
             Console.ReadLine();
