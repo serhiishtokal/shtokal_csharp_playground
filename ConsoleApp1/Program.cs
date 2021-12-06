@@ -12,7 +12,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            ITest k = new T20211202_JsonDeSerialization();
+            ITest k = new T20211206_SortedDictionaryJsonSerialization();
             k.Test();
 
             Console.ReadLine();
