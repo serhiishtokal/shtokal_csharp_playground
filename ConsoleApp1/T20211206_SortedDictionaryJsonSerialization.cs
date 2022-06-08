@@ -19,6 +19,9 @@ namespace ConsoleApp1
             var strDict =  dict.ToJsonString();
             var dict2 = strDict.ToSortedDictionary<SortedDictionary<string,string>>();
             var strDict2 = dict.ToJsonString();
+
+            var hashSet = new HashSet<string>(new[] { "fddf", "fdfdfdf" } );
+            var hashSetJson = JsonSerializer.Serialize(hashSet);
             Console.WriteLine(strDict);
         }
     }
