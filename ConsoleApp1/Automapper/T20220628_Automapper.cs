@@ -14,19 +14,18 @@ namespace ConsoleApp1.Automapper
         {
             var mapper = CreateIMapper();
             var parent = new Parent("I am Parent");
-            List<Child> children = new();
+            var children = Enumerable.Empty<Child>();
             for (int i = 0; i < 4; i++)
             {
                 var child = new Child($"I am child {i + 1}");
-                children.Add(child);
+                children = children.Append(child);
             }
 
             parent.ParentChildrenAssignments = children
                 .Select(x => new ParentChildrenAssignment(x, DateTime.UtcNow))
                 .ToArray();
-            //todo
-            throw new NotImplementedException();
-            var parentDto = mapper.Map<ParentDto>(parent); //error 
+
+            var parentDto = mapper.Map<ParentDto>(parent);
             
         }
 
@@ -42,11 +41,22 @@ namespace ConsoleApp1.Automapper
         {
             cfg.CreateMap<Parent, ParentDto>()
                 .ForMember(x=>x.Children, y=>y.MapFrom(x=>x.ParentChildrenAssignments));
+
+
             cfg.CreateMap<ParentChildrenAssignment, ChildDto>()
-                .ForMember(x => x.AssignmentDate, y => y.MapFrom(x => x.AssignmentDate))
-                .ForAllMembers(x => x.MapFrom(y => y.Child))
-                ;
+                .ConvertUsing<ChildrenMappingConverter>();
+
             cfg.CreateMap<Child, ChildDto>();
+        }
+
+        private class ChildrenMappingConverter : ITypeConverter<ParentChildrenAssignment, ChildDto>
+        {
+            public ChildDto Convert(ParentChildrenAssignment source, ChildDto destination, ResolutionContext context)
+            {
+                var k = context.Mapper.Map<ChildDto>(source.Child);
+                k.AssignmentDate = source.AssignmentDate;
+                return k;
+            }
         }
     }
 
