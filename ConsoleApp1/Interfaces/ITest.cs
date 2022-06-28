@@ -3,6 +3,5 @@
     internal interface ITest
     {
         void Test();
-
     }
 }

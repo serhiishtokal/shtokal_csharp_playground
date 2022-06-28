@@ -1,4 +1,5 @@
-﻿using ConsoleApp1.Interfaces;
+﻿using ConsoleApp1.Automapper;
+using ConsoleApp1.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -12,7 +13,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            ITest k = new T20220328_Nameof();
+            ITest k = new T20220628_Automapper();
             k.Test();
 
             Console.ReadLine();
