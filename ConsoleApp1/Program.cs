@@ -1,11 +1,7 @@
 ﻿using ConsoleApp1.Automapper;
 using ConsoleApp1.Interfaces;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-
-
 
 namespace ConsoleApp1
 {
@@ -13,7 +9,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            ITest k = new T20221019_HashSet();
+            ITest k = new T20230322_BuiltInSerialization();
             k.Test();
 
             Console.ReadLine();

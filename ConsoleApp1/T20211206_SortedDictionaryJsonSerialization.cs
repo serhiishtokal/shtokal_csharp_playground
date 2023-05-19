@@ -42,7 +42,5 @@ namespace ConsoleApp1
         {
             return JsonSerializer.Deserialize<T>(json);
         }
-
-
     }
 }
