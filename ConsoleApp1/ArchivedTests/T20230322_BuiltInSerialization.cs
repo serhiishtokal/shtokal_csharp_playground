@@ -1,9 +1,8 @@
-﻿
-using ConsoleApp1.Interfaces;
-using System;
+﻿using System;
 using System.Text.Json;
+using ConsoleApp1.Interfaces;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.ArchivedTests
 {
     public class T20230322_BuiltInSerialization : ITest
     {

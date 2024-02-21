@@ -1,9 +1,9 @@
-﻿using ConsoleApp1.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text.Json;
+using ConsoleApp1.Interfaces;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.ArchivedTests
 {
     public class T20211202_JsonDeSerialization : ITest
     {

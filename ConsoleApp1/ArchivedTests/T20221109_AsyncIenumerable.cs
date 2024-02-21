@@ -1,10 +1,9 @@
-﻿using ConsoleApp1.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
+using ConsoleApp1.Interfaces;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.ArchivedTests
 {
     internal class T20221109_AsyncIenumerable : ITest
     {

@@ -1,18 +1,17 @@
-﻿using ConsoleApp1.Automapper;
+﻿using System;
+using ConsoleApp1.Extensions;
 using ConsoleApp1.Interfaces;
-using System;
-using System.Collections.Generic;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace ConsoleApp1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            ITest k = new T20230322_BuiltInSerialization();
-            k.Test();
+var services = new ServiceCollection();
+services.Add2024Tests();
 
-            Console.ReadLine();
-        }
-    }
-}
+//get registered services
+var serviceProvider = services.BuildServiceProvider();
+var scope = serviceProvider.CreateScope();
+var test = scope.ServiceProvider.GetService<ITest>();
+
+test.Test();
+
+Console.ReadLine();
+

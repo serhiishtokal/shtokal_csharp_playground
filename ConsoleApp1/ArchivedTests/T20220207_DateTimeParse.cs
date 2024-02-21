@@ -1,7 +1,7 @@
-﻿using ConsoleApp1.Interfaces;
-using System;
+﻿using System;
+using ConsoleApp1.Interfaces;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.ArchivedTests
 {
     public class T20220207_DateTimeParse : ITest
     {

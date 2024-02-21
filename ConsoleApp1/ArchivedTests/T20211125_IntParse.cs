@@ -1,6 +1,6 @@
 ﻿using ConsoleApp1.Interfaces;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.ArchivedTests
 {
     public class T20211125_IntParse : ITest
     {
