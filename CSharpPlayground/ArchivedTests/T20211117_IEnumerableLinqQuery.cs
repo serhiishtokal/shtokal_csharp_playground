@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace ConsoleApp1.ArchivedTests
+namespace CSharpPlayground.ArchivedTests
 {
     public class T20211117_IEnumerableLinqQuery
     {

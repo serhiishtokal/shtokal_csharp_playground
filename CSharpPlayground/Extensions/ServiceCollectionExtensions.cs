@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using ConsoleApp1.Interfaces;
+using CSharpPlayground.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ConsoleApp1.Extensions;
+namespace CSharpPlayground.Extensions;
 
 public static class ServiceCollectionExtensions
 {

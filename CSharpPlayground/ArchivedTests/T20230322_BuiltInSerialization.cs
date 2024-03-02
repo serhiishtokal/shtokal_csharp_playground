@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text.Json;
-using ConsoleApp1.Interfaces;
+using CSharpPlayground.Interfaces;
 
-namespace ConsoleApp1.ArchivedTests
+namespace CSharpPlayground.ArchivedTests
 {
     public class T20230322_BuiltInSerialization : ITest
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text.Json;
-using ConsoleApp1.Interfaces;
+using CSharpPlayground.Interfaces;
 
-namespace ConsoleApp1.Tests;
+namespace CSharpPlayground.Tests;
 
 public class SerializeRecordToJson_T202402220840 : ITest
 {

@@ -1,5 +1,5 @@
-﻿using ConsoleApp1.Extensions;
-using ConsoleApp1.Interfaces;
+﻿using CSharpPlayground.Extensions;
+using CSharpPlayground.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 var services = new ServiceCollection();

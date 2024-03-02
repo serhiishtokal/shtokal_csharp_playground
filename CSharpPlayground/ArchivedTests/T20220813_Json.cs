@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using ConsoleApp1.Interfaces;
+using CSharpPlayground.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace ConsoleApp1.ArchivedTests
+namespace CSharpPlayground.ArchivedTests
 {
     //internal class T20221013_Interfaces
     //{

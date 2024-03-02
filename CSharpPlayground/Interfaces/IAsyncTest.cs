@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.Interfaces;
+namespace CSharpPlayground.Interfaces;
 
 public interface IAsyncTest
 {

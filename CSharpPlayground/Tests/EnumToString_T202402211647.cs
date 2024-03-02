@@ -1,7 +1,7 @@
 ﻿using System;
-using ConsoleApp1.Interfaces;
+using CSharpPlayground.Interfaces;
 
-namespace ConsoleApp1.Tests;
+namespace CSharpPlayground.Tests;
 
 public class EnumToString_T202402211647 : ITest
 {

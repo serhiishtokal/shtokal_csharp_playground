@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Interfaces
+﻿namespace CSharpPlayground.Interfaces
 {
     internal interface ITest
     {

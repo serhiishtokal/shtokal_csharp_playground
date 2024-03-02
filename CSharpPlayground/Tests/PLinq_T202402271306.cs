@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ConsoleApp1.Interfaces;
+using CSharpPlayground.Interfaces;
 using Dumpify;
 
-namespace ConsoleApp1.Tests;
+namespace CSharpPlayground.Tests;
 
 public class PLinq_T202402271306 : IAsyncTest
 {

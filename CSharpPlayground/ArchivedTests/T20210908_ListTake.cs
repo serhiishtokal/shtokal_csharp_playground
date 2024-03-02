@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.ArchivedTests
+namespace CSharpPlayground.ArchivedTests
 {
     public class T20210908_ListTake
     {
