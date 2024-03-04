@@ -1,4 +1,6 @@
-﻿namespace SerilogPlayground.Endpoints;
+﻿using SerilogPlayground.Services;
+
+namespace SerilogPlayground.Endpoints;
 
 public class GetWeatherEndpoint
 {
@@ -13,8 +15,10 @@ public class GetWeatherEndpoint
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
     
-    private static WeatherForecast[] Handle()
+    private static WeatherForecast[] Handle(SampleService sampleService)
     {
+        sampleService.DoSomething();
+        
         var forecast = Enumerable.Range(1, 5).Select(index =>
                 new WeatherForecast
                 (
