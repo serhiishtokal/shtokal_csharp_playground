@@ -1,19 +1,29 @@
 ﻿using Serilog;
-using ILogger = Serilog.ILogger;
+using Serilog.Context;
 
 namespace SerilogPlayground.Services;
 
 public class SampleService
 {
-    private readonly ILogger _logger = Log.ForContext<SampleService>();
+    private readonly Serilog.ILogger _serilogLogger = Log.ForContext<SampleService>();
+    private readonly ILogger<SampleService> _microsoftLogger;
 
-    public SampleService()
+    public SampleService(ILogger<SampleService> microsoftLogger)
     {
-        var k = Log.ForContext<SampleService>();
+        _microsoftLogger = microsoftLogger;
     }
     
     public void DoSomething()
     {
-        _logger.Information("SampleService.DoSomething called");
+        using (LogContext.PushProperty("SomeName", new {SomeProperty = "SomeValue"}))
+        {
+            _serilogLogger.Warning("SERILOG SampleService.DoSomething called");
+            _serilogLogger.Warning("SERILOG SampleService.DoSomething called log 2");
+        }
+        
+        using (_microsoftLogger.BeginScope(new { SomeProperty = "SomeValue" }))
+        {
+            _microsoftLogger.LogWarning("Microsoft SampleService.DoSomething called");
+        }
     }
 }
