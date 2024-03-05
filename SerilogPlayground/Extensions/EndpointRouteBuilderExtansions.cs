@@ -8,5 +8,6 @@ public static class EndpointRouteBuilderExtansions
     public static void MapEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
     {
         GetWeatherEndpoint.Configure(endpointRouteBuilder);
+        InnerScopeTestEndpoint.Configure(endpointRouteBuilder);
     }
 }
