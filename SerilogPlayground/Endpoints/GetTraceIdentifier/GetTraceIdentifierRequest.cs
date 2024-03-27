@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using FastEndpoints;
+using SerilogPlayground.Services.Senders;
 
 namespace SerilogPlayground.Endpoints.GetTraceIdentifier;
 
