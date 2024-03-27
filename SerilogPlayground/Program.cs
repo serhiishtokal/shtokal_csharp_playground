@@ -1,3 +1,4 @@
+using FastEndpoints;
 using Serilog;
 using SerilogPlayground.Extensions;
 using SerilogPlayground.Middleware;
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<SampleService>();
 builder.Services.AddScoped<SampleService2>();
+
+builder.Services.AddFastEndpoints();
 
 builder.Host.UseSerilog((ctx, lc) => lc
     .ReadFrom.Configuration(ctx.Configuration)
@@ -28,9 +31,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseMiddleware<RequestLogContextMiddleware>();
 app.UseHttpsRedirection();
-app.UseSerilogRequestLogging();
+//app.UseSerilogRequestLogging();
 
 app.MapEndpoints();
+app.UseFastEndpoints();
 
 app.Run();
 
