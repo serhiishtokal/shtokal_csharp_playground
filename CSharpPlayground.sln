@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomUrlBuilderTests", "Cu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPantry", "TestsPantry\TestsPantry.csproj", "{8AA6E502-4628-4953-A9EE-B6BA28275DBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogPlayground", "SerilogPlayground\SerilogPlayground.csproj", "{753D21C2-8B42-4408-8E5C-44D85251E174}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPlayground", "AspNetPlayground\AspNetPlayground.csproj", "{753D21C2-8B42-4408-8E5C-44D85251E174}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
