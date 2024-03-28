@@ -12,3 +12,11 @@
 {"@t":"2024-03-27T20:23:54.5831150Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"381","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
 {"@t":"2024-03-27T20:24:09.1234318Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"414","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
 {"@t":"2024-03-27T20:27:46.6205766Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"368","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T20:38:53.3073702Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"395","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T22:28:13.9561191Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"1,336","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T22:36:26.4123131Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"380","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T22:41:45.5441771Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"430","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T22:46:20.8965207Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"370","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T22:47:04.3408371Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"384","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T22:55:27.9427560Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"381","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
+{"@t":"2024-03-27T22:56:52.1608550Z","@mt":"Registered {@total} endpoints in {@time} milliseconds.","total":2,"time":"376","SourceContext":"FastEndpoints.StartupTimer","Application":"MyApp"}
