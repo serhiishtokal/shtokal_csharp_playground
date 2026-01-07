@@ -1,4 +1,4 @@
-namespace TestsPantry.TestExamples;
+﻿namespace TestsPantry;
 
 public class TimeSpanTests
 {

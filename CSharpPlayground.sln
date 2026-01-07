@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomUrlBuilderTests", "Cu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetPlayground", "AspNetPlayground\AspNetPlayground.csproj", "{753D21C2-8B42-4408-8E5C-44D85251E174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPantry", "TestsPantry\TestsPantry.csproj", "{C50D9880-877E-4908-9276-F7BC025D59D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPantry", "TestsPantry\TestsPantry.csproj", "{D62BF82C-B57B-4F40-A36B-9D360C1F6735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{753D21C2-8B42-4408-8E5C-44D85251E174}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{753D21C2-8B42-4408-8E5C-44D85251E174}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{753D21C2-8B42-4408-8E5C-44D85251E174}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C50D9880-877E-4908-9276-F7BC025D59D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C50D9880-877E-4908-9276-F7BC025D59D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C50D9880-877E-4908-9276-F7BC025D59D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C50D9880-877E-4908-9276-F7BC025D59D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62BF82C-B57B-4F40-A36B-9D360C1F6735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62BF82C-B57B-4F40-A36B-9D360C1F6735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62BF82C-B57B-4F40-A36B-9D360C1F6735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62BF82C-B57B-4F40-A36B-9D360C1F6735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
